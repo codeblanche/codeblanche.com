@@ -7,8 +7,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen" />
 
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script data-main="js/main" src="js/require.js"></script>
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
@@ -41,78 +43,54 @@
     </div>
 
     <div id="nav">
+        <ul>
+            <li><a class="gradient about" href="/" data-name="about">About</a></li>
+            <li><a class="gradient services" href="/services" data-name="services">Services</a></li>
+            <li><a class="gradient products" href="/products" data-name="products">Products</a></li>
+            <li><a class="gradient portfolio" href="/portfolio" data-name="portfolio">Portfolio</a></li>
+            <li><a class="gradient blog" href="/blog" data-name="blog">Blog</a></li>
+            <li><a class="gradient contact" href="/contact" data-name="contact">Contact</a></li>
+        </ul>
     </div>
 
     <div id="content">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div id="navpointer">
+            <div><span></span></div>
+        </div>
+
+        <div id="about" class="content-block">
+            about
+        </div>
+
+        <div id="services" class="content-block">
+            <h1>Services</h1>
+            <h2>Consulting</h2>
+            <h2>Website Development</h2>
+            <h2>Internet application development</h2>
+            <h2>Freelance Web Development</h2>
+        </div>
+
+        <div id="products" class="content-block">
+            <h1>Products</h1>
+            <h2>Open source</h2>
+            <h3>ContinuousPHP (Codename: SID)</h3>
+            <h3>EntityMarshal</h3>
+            <h2>Closed source</h2>
+            <h3>P3T (Codename: PET)</h3>
+        </div>
+
+        <div id="portfolio" class="content-block">
+            portfolio
+        </div>
+
+        <div id="blog" class="content-block">
+            blog
+        </div>
+
+        <div id="contact" class="content-block">
+            contact
+        </div>
+
     </div>
 
     <div class="clear"></div>
