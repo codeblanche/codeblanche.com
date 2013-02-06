@@ -19,6 +19,9 @@ body, html {
     margin: 0;
     padding: 0;
 }
+body {
+    background: #f9f9f9;
+}
 
 body, p, input, textarea, select {
     font-family: helvetical, sans-serif;
@@ -48,19 +51,30 @@ body, p, input, textarea, select {
 }
 
 #nav {
-    float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     width: 30%;
     min-width: 200px;
-    color: white;
+    height: 100%;
+    /* http://www.colorzilla.com/gradient-editor/#222222+0,333333+100;Custom */
+    background: rgb(34,34,34); /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyMjIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(34,34,34,1)), color-stop(100%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#333333',GradientType=1 ); /* IE6-8 */
 }
 
 #nav ul {
-    position: fixed;
-    top: 150px;
     margin: 0;
+    margin-top: 150px;
     padding: 0;
     z-index: 1;
-    width: 30%;
+    width: 100%;
     list-style-type: none;
     text-align: right;
     font-size: 18px;
@@ -81,16 +95,9 @@ body, p, input, textarea, select {
 
 }
 #nav ul li a:hover {
+    /*color: yellowgreen;*/
+    background: #222;
     /* http://www.colorzilla.com/gradient-editor/#333333+0,444444+100;Custom */
-    background: rgb(51,51,51); /* Old browsers */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NDQ0NDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(left,  rgba(51,51,51,1) 0%, rgba(68,68,68,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(51,51,51,1)), color-stop(100%,rgba(68,68,68,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  rgba(51,51,51,1) 0%,rgba(68,68,68,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  rgba(51,51,51,1) 0%,rgba(68,68,68,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  rgba(51,51,51,1) 0%,rgba(68,68,68,1) 100%); /* IE10+ */
-    background: linear-gradient(to right,  rgba(51,51,51,1) 0%,rgba(68,68,68,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#444444',GradientType=1 ); /* IE6-8 */
 }
 
 #content {
@@ -98,10 +105,8 @@ body, p, input, textarea, select {
     margin-left: 30%;
     width: 70%;
     height: 100%;
-	background: #f9f9f9;
-    -moz-box-shadow: -5px 0px 9px rgba(0,0,0,0.2);
-    -webkit-filter: drop-shadow(-5px 0px 9px rgba(0,0,0,0.2));
-    filter: drop-shadow(-5px 0px 9px rgba(0,0,0,0.2));
+    -webkit-box-shadow:  -5px 0px 9px 0px rgba(0, 0, 0, 1);
+    box-shadow:  -5px 0px 9px 0px rgba(0, 0, 0, 1);
     z-index: 3;
 }
 #content .content-block {
