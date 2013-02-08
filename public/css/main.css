@@ -67,9 +67,11 @@ body, p, input, textarea, select {
     background: -ms-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* IE10+ */
     background: linear-gradient(to right,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#333333',GradientType=1 ); /* IE6-8 */
+    -webkit-box-shadow: inset -5px 0px 9px 0px rgba(0, 0, 0, 1);
+    box-shadow: inset -5px 0px 9px 0px rgba(0, 0, 0, 1);
 }
 
-#nav ul {
+#nav > ul {
     margin: 0;
     margin-top: 150px;
     padding: 0;
@@ -80,9 +82,9 @@ body, p, input, textarea, select {
     font-size: 18px;
     text-transform: uppercase;
 }
-#nav ul li {
+#nav > ul > li {
 }
-#nav ul li a {
+#nav > ul > li > a {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -92,12 +94,12 @@ body, p, input, textarea, select {
     padding: 0 35px 0 0;
     text-shadow: -5px 0px 5px rgba(0,0,0,0.2);
     filter: dropshadow(color=rgba(0,0,0,0.2), offx=-5, offy=0);
-
 }
-#nav ul li a:hover {
-    /*color: yellowgreen;*/
+#nav > ul > li > a:hover {
     background: #222;
-    /* http://www.colorzilla.com/gradient-editor/#333333+0,444444+100;Custom */
+}
+#nav > ul > li > a:active {
+    background: none;
 }
 
 #content {
@@ -105,13 +107,11 @@ body, p, input, textarea, select {
     margin-left: 30%;
     width: 70%;
     height: 100%;
-    -webkit-box-shadow:  -5px 0px 9px 0px rgba(0, 0, 0, 1);
-    box-shadow:  -5px 0px 9px 0px rgba(0, 0, 0, 1);
-    z-index: 3;
+
 }
 #content .content-block {
-    padding-top: 145px;
-    margin-left: 20px;
+    padding-top: 120px;
+    margin-left: 90px;
     display: none;
 }
 
@@ -139,3 +139,23 @@ body, p, input, textarea, select {
     -o-transform: matrix(0.423,-0.906,0.537,1.215,0,0);
     transform: matrix(0.423,-0.906,0.537,1.215,0,0);
 }
+
+#blog > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 70%;
+}
+#blog > ul > li {
+    margin-top: 25px;
+    clear: both;
+}
+#blog > ul > li > img {
+    float: right;
+    margin: 10px 0 10px 10px;
+    overflow: hidden;
+}
+#blog > ul > li > h2 { font-size: 16px; margin: 0 0 4px; }
+#blog > ul > li > h2 > .date { display: inline-block; float: right; font-size: 16px; font-weight: normal; }
+#blog > ul > li > hr { border: 0; border-bottom: 1px solid #e0e0e0; margin: 0; padding: 0; }
+#blog > ul > li > p { margin: 5px 0; }
