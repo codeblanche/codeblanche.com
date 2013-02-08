@@ -1,0 +1,161 @@
+/*
+    Document   : main
+    Created on : Feb 4, 2013, 5:09:14 PM
+    Author     : Merten van Gerven
+    Description:
+        Base stylesheet for all media types
+*/
+root {
+    display: block;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #f9f9f9;
+}
+
+body, p, input, textarea, select {
+    font-family: helvetical, sans-serif;
+}
+
+
+#main {
+    min-height: 100%;
+    /* http://www.colorzilla.com/gradient-editor/#222222+0,333333+30;Custom */
+    background: rgb(34,34,34); /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyMjIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(left,  rgba(34,34,34,1) 0%, rgba(51,51,51,1) 30%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(34,34,34,1)), color-stop(30%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 30%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 30%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 30%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 30%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#333333',GradientType=1 ); /* IE6-8 */
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    margin-left: -165px;
+    z-index: 100;
+}
+
+#nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+    min-width: 200px;
+    height: 100%;
+    /* http://www.colorzilla.com/gradient-editor/#222222+0,333333+100;Custom */
+    background: rgb(34,34,34); /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyMjIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(34,34,34,1)), color-stop(100%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(34,34,34,1) 0%,rgba(51,51,51,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#333333',GradientType=1 ); /* IE6-8 */
+    -webkit-box-shadow: inset -5px 0px 9px 0px rgba(0, 0, 0, 1);
+    box-shadow: inset -5px 0px 9px 0px rgba(0, 0, 0, 1);
+}
+
+#nav > ul {
+    margin: 0;
+    margin-top: 150px;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+    list-style-type: none;
+    text-align: right;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#nav > ul > li {
+}
+#nav > ul > li > a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 52px;
+    color: white;
+    text-decoration: none;
+    padding: 0 35px 0 0;
+    text-shadow: -5px 0px 5px rgba(0,0,0,0.2);
+    filter: dropshadow(color=rgba(0,0,0,0.2), offx=-5, offy=0);
+}
+#nav > ul > li > a:hover {
+    background: #222;
+}
+#nav > ul > li > a:active {
+    background: none;
+}
+
+#content {
+	position: relative;
+    margin-left: 30%;
+    width: 70%;
+    height: 100%;
+
+}
+#content .content-block {
+    padding-top: 120px;
+    margin-left: 90px;
+    display: none;
+}
+
+#navpointer {
+    position: fixed;
+    overflow: hidden;
+    top: -100px;
+    left: 30%;
+    margin-top: -26px;
+    margin-left: -12px;
+    z-index: 4;
+    width: 100px;
+    height: 52px;
+    width: 12px;
+}
+#navpointer div {
+    position: absolute;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    -webkit-transform: matrix(0.423,-0.906,0.537,1.215,0,0);
+    -moz-transform: matrix(0.423,-0.906,0.537,1.215,0px,0px);
+    -ms-transform: matrix(0.423,-0.906,0.537,1.215,0,0);
+    -o-transform: matrix(0.423,-0.906,0.537,1.215,0,0);
+    transform: matrix(0.423,-0.906,0.537,1.215,0,0);
+}
+
+#blog > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 70%;
+}
+#blog > ul > li {
+    margin-top: 25px;
+    clear: both;
+}
+#blog > ul > li > img {
+    float: right;
+    margin: 10px 0 10px 10px;
+    overflow: hidden;
+}
+#blog > ul > li > h2 { font-size: 16px; margin: 0 0 4px; }
+#blog > ul > li > h2 > .date { display: inline-block; float: right; font-size: 16px; font-weight: normal; }
+#blog > ul > li > hr { border: 0; border-bottom: 1px solid #e0e0e0; margin: 0; padding: 0; }
+#blog > ul > li > p { margin: 5px 0; }
