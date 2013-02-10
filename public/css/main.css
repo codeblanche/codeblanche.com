@@ -27,6 +27,13 @@ body, p, input, textarea, select {
     font-family: helvetical, sans-serif;
 }
 
+h1 {
+    letter-spacing: -0.1em;
+}
+h2,h3,h4,h5,h6,p {
+    letter-spacing: -0.05em;
+}
+
 
 #main {
     min-height: 100%;
@@ -94,6 +101,7 @@ body, p, input, textarea, select {
     padding: 0 35px 0 0;
     text-shadow: -5px 0px 5px rgba(0,0,0,0.2);
     filter: dropshadow(color=rgba(0,0,0,0.2), offx=-5, offy=0);
+    letter-spacing: -0.08em;
 }
 #nav > ul > li > a:hover {
     background: #222;
