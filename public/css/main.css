@@ -28,7 +28,9 @@ body, p, input, textarea, select {
 }
 
 h1 {
-    letter-spacing: -0.1em;
+    font-size: 20px;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
 }
 h2,h3,h4,h5,h6,p {
     letter-spacing: -0.05em;
@@ -101,7 +103,7 @@ h2,h3,h4,h5,h6,p {
     padding: 0 35px 0 0;
     text-shadow: -5px 0px 5px rgba(0,0,0,0.2);
     filter: dropshadow(color=rgba(0,0,0,0.2), offx=-5, offy=0);
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 #nav > ul > li > a:hover {
     background: #222;
@@ -112,6 +114,7 @@ h2,h3,h4,h5,h6,p {
 
 #content {
 	position: relative;
+    margin-top: 33px;
     margin-left: 30%;
     width: 70%;
     height: 100%;
@@ -152,18 +155,30 @@ h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    width: 70%;
+    width: 85%;
 }
 #blog > ul > li {
+    text-align: center;
+}
+#blog > ul > li.t1 {
     margin-top: 25px;
-    clear: both;
+    width: 32%;
+    min-width: 200px;
+    float: left;
+    margin-right: 1%;
+}
+#blog > ul > li.t2 {
+    margin-top: 25px;
+    width: 65%;
+    min-width: 400px;
+    float: left;
+    margin-right: 1%;
 }
 #blog > ul > li > img {
-    float: right;
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 0;
     overflow: hidden;
 }
-#blog > ul > li > h2 { font-size: 16px; margin: 0 0 4px; }
-#blog > ul > li > h2 > .date { display: inline-block; float: right; font-size: 16px; font-weight: normal; }
-#blog > ul > li > hr { border: 0; border-bottom: 1px solid #e0e0e0; margin: 0; padding: 0; }
-#blog > ul > li > p { margin: 5px 0; }
+#blog > ul > li > h2 { background: black; color: white; font-size: 16px; margin: 0 0 4px; text-align: left; padding: 5px; }
+#blog > ul > li > h2 > .date { display: block; font-size: 12px; font-weight: normal; }
+#blog > ul > li > hr { border: 0; margin: 0; padding: 0; }
+#blog > ul > li > p { margin: 5px 0; text-align: left; }
