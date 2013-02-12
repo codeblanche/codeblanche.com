@@ -29,9 +29,24 @@ body, p, input, textarea, select {
 
 h1 {
     font-size: 20px;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
+    /*display: inline-block;*/
+    padding: 0 20px;
+    -webkit-border-radius: 35px 0px 0px 35px;
+            border-radius: 35px 0px 0px 35px;
+    color: white;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+    filter: dropshadow(color=rgba(0,0,0,0.1), offx=-1, offy=1);
+    font-weight: normal;
+    line-height: 52px;
+    margin-left: -20px;
 }
+#blog h1 { background: #ff670f; }
+#services h1 { background: #4096ee; }
+#products h1 { background: #a849a3; }
+#portfolio h1 { background: #febf04; }
+#contact h1 { background: #16C400; }
 h2,h3,h4,h5,h6,p {
     letter-spacing: -0.05em;
 }
@@ -107,21 +122,25 @@ h2,h3,h4,h5,h6,p {
 }
 #nav > ul > li > a:hover {
     background: #222;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.2);
+    filter: dropshadow(color=rgba(0,0,0,0.2), offx=-1, offy=1);
 }
-#nav > ul > li > a:active {
-    background: none;
-}
+#nav > ul > li > a.blog:hover { background: #ff670f; }
+#nav > ul > li > a.services:hover { background: #4096ee; }
+#nav > ul > li > a.products:hover { background: #a849a3; }
+#nav > ul > li > a.portfolio:hover { background: #febf04; }
+#nav > ul > li > a.contact:hover { background: #16C400; }
+/*#91e842*/
+#nav > ul > li > a:active { background: none; }
 
 #content {
 	position: relative;
-    margin-top: 33px;
     margin-left: 30%;
     width: 70%;
-    height: 100%;
-
 }
 #content .content-block {
-    padding-top: 120px;
+    padding-top: 140px;
+    padding-left: 15px;
     margin-left: 90px;
     display: none;
 }
@@ -151,6 +170,12 @@ h2,h3,h4,h5,h6,p {
     transform: matrix(0.423,-0.906,0.537,1.215,0,0);
 }
 
+#blog a {
+    color: #ff670f;
+}
+#blog a:hover, #blog a:visited {
+    text-decoration: none;
+}
 #blog > ul {
     margin: 0;
     padding: 0;
@@ -159,26 +184,29 @@ h2,h3,h4,h5,h6,p {
 }
 #blog > ul > li {
     text-align: center;
+    border-right: 1px solid #333;
 }
-#blog > ul > li.t1 {
-    margin-top: 25px;
+#blog > ul > li {
+    margin-top: 15px;
     width: 32%;
     min-width: 200px;
     float: left;
     margin-right: 1%;
 }
-#blog > ul > li.t2 {
-    margin-top: 25px;
+#blog > ul > li.span2 {
     width: 65%;
     min-width: 400px;
-    float: left;
-    margin-right: 1%;
+}
+#blog > ul > li.span3 {
+    width: 98.5%;
+    min-width: 600px;
+    margin-right: 0;
 }
 #blog > ul > li > img {
     margin: 10px 0 0;
     overflow: hidden;
 }
-#blog > ul > li > h2 { background: black; color: white; font-size: 16px; margin: 0 0 4px; text-align: left; padding: 5px; }
-#blog > ul > li > h2 > .date { display: block; font-size: 12px; font-weight: normal; }
+#blog > ul > li > h2 { color: #ff670f; font-size: 18px; margin: 0 0 4px; text-align: left; padding: 5px; }
+#blog > ul > li > h2 > .date { display: block; font-size: 12px; font-weight: normal; margin-top: 5px; }
 #blog > ul > li > hr { border: 0; margin: 0; padding: 0; }
-#blog > ul > li > p { margin: 5px 0; text-align: left; }
+#blog > ul > li > p { margin: 5px 0 0; text-align: left; padding: 0px 10px 0 5px; line-height: 25px; }
