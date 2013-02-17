@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 
@@ -36,78 +36,89 @@
 </head>
 <body>
 
-    <div id="logo">
-        <a href="/"><img src="/img/logo-std-large.png" width="408" height="79" /></a>
-    </div>
+    <div id="main">
 
-    <div id="nav" class="gradient">
-        <ul>
-            <li><a class="gradient blog" href="/blog" data-name="blog">Blog</a></li>
-            <li><a class="gradient services" href="/services" data-name="services">Services</a></li>
-            <li><a class="gradient products" href="/products" data-name="products">Products</a></li>
-            <li><a class="gradient portfolio" href="/portfolio" data-name="portfolio">Portfolio</a></li>
-            <li><a class="gradient contact" href="/contact" data-name="contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <div id="content">
-        <div id="navpointer">
-            <div><span></span></div>
+        <div id="logo">
+            <a href="/"><img src="/img/logo-std-large.png" width="408" height="79" /></a>
         </div>
 
-        <div id="blog" class="content-block">
-            <h1>Blog</h1>
-            <ul class="blog-list">
-                <li class="blog-entry span2">
-                    <h2>Stepping out to start CodeBlanche, no easy task<span class="date">1 March 2013</span></h2>
-                    <p>After a long time in the planning, it's finally time to unveil CodeBlanche. The drive for quality and simple usability brings with it the need to branch out from the nestled security of employment, and create a new force in the world of internet solutions. We aim to hide complexity to reveal a natural simplicity that is so lacking in todays internet software. Together we can make it happen.<br /><br /> <a href="/contact">Contact us</a> to find out more.</p>
-                </li>
-                <li class="blog-entry">
-                    <h2>New website launch<span class="date">18 February 2013</span></h2>
-                    <p>Proud to launch our new CodeBlanche website showcasing our <a href="/products">products</a> and <a href="/services">services</a>. We can boast only a few projects in our <a href="/portfolio">portfolio</a> under the CodeBlanche badge for now but hope to have more to show you in the near future.</p>
-                </li>
+        <div id="nav" class="gradient">
+            <div id="navpointer">
+                <div><span></span></div>
+            </div>
+
+            <ul>
+                <li><a class="gradient blog active" href="/blog" data-name="blog">Blog</a></li>
+                <li><a class="gradient services" href="/services" data-name="services">Services</a></li>
+                <li><a class="gradient products" href="/products" data-name="products">Products</a></li>
+                <li><a class="gradient portfolio" href="/portfolio" data-name="portfolio">Portfolio</a></li>
+                <li><a class="gradient contact" href="/contact" data-name="contact">Contact</a></li>
             </ul>
         </div>
 
-        <div id="services" class="content-block">
-            <h1>Services</h1>
-            <h2>Consulting</h2>
-            <h2>Website Development</h2>
-            <h2>Internet application development</h2>
-            <h2>Freelance Web Development</h2>
+        <div id="content">
+
+
+            <div id="blog" class="content-block">
+                <h1>Blog</h1>
+                <ul class="blog-list">
+                    <li class="blog-entry span3">
+                        <h2>Stepping out to start CodeBlanche, no easy task<span class="date">1 March 2013</span></h2>
+                        <hr />
+                        <p>After a long time in the planning, it's finally time to unveil CodeBlanche. The drive for quality and simple usability brings with it the need to branch out from the nestled security of employment, and create a new force in the world of internet solutions. We aim to hide complexity to reveal a natural simplicity that is so lacking in todays internet software. Together we can make it happen. Make <a href="/contact">contact</a> to find out more.</p>
+                    </li>
+                    <li class="blog-entry span3">
+                        <h2>New website launch<span class="date">18 February 2013</span></h2>
+                        <hr />
+                        <p>Proud to launch our new CodeBlanche website showcasing our <a href="/products">products</a> and <a href="/services">services</a>. We can boast only a few projects in our <a href="/portfolio">portfolio</a> under the CodeBlanche badge for now but hope to have more to show you in the near future.</p>
+                    </li>
+                </ul>
+
+                <div class="clear"></div>
+
+            </div>
+
+            <div id="services" class="content-block">
+                <h1>Services</h1>
+                <h2>Consulting</h2>
+                <h2>Website Development</h2>
+                <h2>Internet application development</h2>
+                <h2>Freelance Web Development</h2>
+            </div>
+
+            <div id="products" class="content-block">
+                <h1>Products</h1>
+                <h2>Open source</h2>
+                <h3>ContinuousPHP (Codename: SID)</h3>
+                <h3>EntityMarshal</h3>
+                <h2>Closed source</h2>
+                <h3>P3T (Codename: PET)</h3>
+            </div>
+
+            <div id="portfolio" class="content-block">
+                <h1>Portfolio</h1>
+                <ul class="portfolio-list">
+                    <li class="portfolio-entry">Vondology</li>
+                    <li class="portfolio-entry">Vondology Dropzone</li>
+                    <li class="portfolio-entry">Vonjac juice</li>
+                </ul>
+            </div>
+
+            <div id="contact" class="content-block">
+                <h1>Contact</h1>
+                <form>
+                    <input type="text" value="" placeholder="Email address" /><br />
+                    <input type="text" value="" placeholder="Contact number" /><br />
+                    <textarea rows="3" placeholder="Message"></textarea><br />
+                    <input type="submit" value="send" />
+                </form>
+            </div>
+
         </div>
 
-        <div id="products" class="content-block">
-            <h1>Products</h1>
-            <h2>Open source</h2>
-            <h3>ContinuousPHP (Codename: SID)</h3>
-            <h3>EntityMarshal</h3>
-            <h2>Closed source</h2>
-            <h3>P3T (Codename: PET)</h3>
-        </div>
-
-        <div id="portfolio" class="content-block">
-            <h1>Portfolio</h1>
-            <ul class="portfolio-list">
-                <li class="portfolio-entry">Vondology</li>
-                <li class="portfolio-entry">Vondology Dropzone</li>
-                <li class="portfolio-entry">Vonjac juice</li>
-            </ul>
-        </div>
-
-        <div id="contact" class="content-block">
-            <h1>Contact</h1>
-            <form>
-                <input type="text" value="" placeholder="Email address" /><br />
-                <input type="text" value="" placeholder="Contact number" /><br />
-                <textarea rows="3" placeholder="Message"></textarea><br />
-                <input type="submit" value="send" />
-            </form>
-        </div>
+        <div class="clear"></div>
 
     </div>
-
-    <div class="clear"></div>
 
 </body>
 </html>
