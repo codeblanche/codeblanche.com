@@ -14,6 +14,9 @@ define([
 
         function setContent () {
             content.show($current.data('name'));
+
+            $navItems.removeClass('active');
+            $current.addClass('active');
         }
 
         function handleMouseOver (event) {
