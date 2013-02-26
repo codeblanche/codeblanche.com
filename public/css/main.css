@@ -384,3 +384,55 @@ i.icon {
 }
 i.yes.icon { background: url(/img/yes-icon-16.png) no-repeat; }
 i.no.icon { background: url(/img/no-icon-16.png) no-repeat; }
+
+/* PEOPLE */
+
+#people > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#people > ul > li {
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 5em;
+    padding: 10px 10px 10px 15px;
+    color: #555;
+    position: relative;
+}
+#people > ul > li > img,
+#people > ul > li > a.img > img {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: none
+}
+#people > ul > li > h2 {
+    color: #b7ad70;
+    font-size: 1.1em;
+    margin: 0 170px 4px 0;
+    text-align: left;
+    padding: 5px;
+}
+#people > ul > li > hr {
+    border: 0;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0 170px 0 5px;
+    padding: 0;
+}
+#people > ul > li > p {
+    margin: 10px 170px 0 0;
+    text-align: left;
+    padding: 0px 10px 0 5px;
+    line-height: 1.56em;
+}
+#people a.link {
+    display: block;
+    font-size: 0.7em;
+    font-weight: normal;
+    margin-top: 5px;
+    color: #febf04;
+}
+#people a.link:hover {
+    color: #222;
+}
