@@ -1,0 +1,13 @@
+{
+    "name"          : "mertenvg/codeblanche",
+    "description"   : "CodeBlanche Website",
+    "license"       : "(c) Copyright Merten van Gerven",
+    "keywords"      : [
+        "CodeBlanche"
+    ],
+    "require"       : {
+        "php"           : ">=5.3",
+        "slim/slim"     : "2.*"
+    }
+}
+
