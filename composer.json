@@ -1,9 +1,14 @@
 {
-    "name"          : "mertenvg/codeblanche",
-    "description"   : "CodeBlanche Website",
-    "license"       : "(c) Copyright Merten van Gerven",
-    "keywords"      : [
-        "CodeBlanche"
+    "name"              : "codeblanche/codeblanche",
+    "description"       : "Propietary product for CodeBlanche",
+    "authors"           : [
+        {
+            "name"  : "Merten van Gerven",
+            "email" : "merten@codeblanche.com"
+        }
+    ],
+    "license"           : "proprietary",
+    "keywords"          : [
     ],
     "require"       : {
         "php"           : ">=5.3",
