@@ -55,6 +55,10 @@
                 <li><a class="portfolio" href="/portfolio" data-name="portfolio">Portfolio</a></li>
                 <li><a class="contact" href="/contact" data-name="contact">Contact</a></li>
             </ul>
+
+            <div id="kvk"><span>KvK</span> 57416389</div>
+            <div id="btw"><span>BTW</span> NL159229121B01</div>
+            <div id="copyright">&copy; Copyright CodeBlanche 2013.</div>
         </div>
 
         <div id="content">
@@ -121,22 +125,22 @@
                 <h1>Products</h1>
                 <ul class="product-list">
                     <li class="product-entry">
-                        <a href="https://github.com/CodeBlanche/Entity"><img src="/img/github-24.png" width="24" height="24"></a>
-                        <h2>Entity <a class="link" href="https://github.com/CodeBlanche/Entity">https://github.com/CodeBlanche/Entity</a></h2>
+                        <a target="_blank" href="https://github.com/CodeBlanche/Entity"><img src="/img/github-24.png" width="24" height="24"></a>
+                        <h2>Entity <a class="link" target="_blank" href="https://github.com/CodeBlanche/Entity">https://github.com/CodeBlanche/Entity</a></h2>
                         <hr />
                         <p>An open source module to super charge entities (data objects) in PHP. This project lacking good documentation at the moment which remains on the CodeBlanche to do list.</p>
                         <p><span class="tag tag-php">PHP</span></p>
                     </li>
                     <li class="product-entry">
-                        <a href="https://github.com/CodeBlanche/Depend"><img src="/img/github-24.png" width="24" height="24"></a>
-                        <h2>Depend <a class="link" href="https://github.com/CodeBlanche/Depend">https://github.com/CodeBlanche/Depend</a></h2>
+                        <a target="_blank" href="https://github.com/CodeBlanche/Depend"><img src="/img/github-24.png" width="24" height="24"></a>
+                        <h2>Depend <a class="link" target="_blank" href="https://github.com/CodeBlanche/Depend">https://github.com/CodeBlanche/Depend</a></h2>
                         <hr />
                         <p>Another open source endeavour to make a PHP developers' life easier by resolving class dependencies, promoting loose coupling of components, and sharing of components and services.</p>
                         <p><span class="tag tag-php">PHP</span></p>
                     </li>
                     <li class="product-entry">
-                        <a href="https://github.com/CodeBlanche/Web"><img src="/img/github-24.png" width="24" height="24"></a>
-                        <h2>Web <a class="link" href="https://github.com/CodeBlanche/Web">https://github.com/CodeBlanche/Web</a></h2>
+                        <a target="_blank" href="https://github.com/CodeBlanche/Web"><img src="/img/github-24.png" width="24" height="24"></a>
+                        <h2>Web <a class="link" target="_blank" href="https://github.com/CodeBlanche/Web">https://github.com/CodeBlanche/Web</a></h2>
                         <hr />
                         <p>A module providing some essential tools for working with web requests and responses. This module is currently under development and will soon be added to the CodeBlanche open source collection.</p>
                         <p><span class="tag tag-php">PHP</span></p>
@@ -219,7 +223,7 @@
                         <a class="img" href="http://vndlgy.com" target="_blank"><img src="/data/portfolio/thumbs/vndlgy.png" width="250" /></a>
                         <h2>VNDLGY (Vondology) <a class="link" target="_blank" href="http://vndlgy.com">http://vndlgy.com</a></h2>
                         <hr />
-                        <p>A flash website with dynamic multi-language content. Not just a pretty face, this website has some smarts under the hood as well. XML driven content management to allow easy modifications to the text without requiring a complete rework of the pages in question. A custom menu was built specifically for this site with elastic effects to make it just that much nicer.</p>
+                        <p>A flash website with dynamic multilingual content. Not just a pretty face, this website has some smarts under the hood as well. XML driven content management to allow easy modifications to the text without requiring a complete rework of the pages in question. A custom menu was built specifically for this site with elastic effects to make it just that much nicer.</p>
                         <p><span class="tag tag-flash">Flash</span><span class="tag tag-js">JavaScript</span><span class="tag tag-html">HTML</span><span class="tag tag-php">PHP</span><span class="tag tag-xml">XML</span></p>
                         <div class="clear"></div>
                     </li>
@@ -231,13 +235,13 @@
                 <form action="/make-contact" method="post" id="contact-form">
                     <h1>Contact</h1>
                     <label for="contact-email">Email</label>
-                    <input type="email" value="" placeholder="" class="text" data-validate="email" id="contact-email" />
+                    <input type="email" class="text" data-validate="email" id="contact-email" />
                     <i class="icon"></i>
                     <label for="contact-phone">Phone</label>
-                    <input type="tel" value="" placeholder="" class="text" data-validate="phone" id="contact-phone" />
+                    <input type="tel" class="text" data-validate="phone" id="contact-phone" />
                     <i class="icon"></i>
                     <label for="contact-message">Message</label>
-                    <textarea rows="3" placeholder="" class="text" data-validate="not-empty" id="contact-message"></textarea>
+                    <textarea rows="3" class="text" data-validate="not-empty" id="contact-message"></textarea>
                     <i class="icon"></i>
                     <input type="submit" value="Send" id="contact-send" />
                 </form>

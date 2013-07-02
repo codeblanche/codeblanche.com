@@ -70,6 +70,43 @@ h2,h3,h4,h5,h6,p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#333333',GradientType=1 ); /* IE6-8 */
 }
 
+#copyright {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    padding: 0 35px 0 0;
+    box-sizing: border-box;
+    color: #f8f8f8;
+    font-size: 0.7em;
+    text-align: right;
+}
+
+#kvk {
+    position: absolute;
+    bottom: 77px;
+    width: 100%;
+    padding: 0 35px 0 0;
+    box-sizing: border-box;
+    color: #f8f8f8;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+#btw {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    padding: 0 35px 0 0;
+    box-sizing: border-box;
+    color: #f8f8f8;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+#kvk span, #btw span {
+    font-size: 0.7em;
+}
+
 #nav > ul {
     margin: 0;
     margin-top: 150px;
@@ -123,7 +160,7 @@ h2,h3,h4,h5,h6,p {
     max-width: 930px;
 }
 .content-block {
-    padding: 8.75em 0;
+    padding: 8.75em 0 4em;
     margin: 0 5.5em;
     display: none;
     min-width: 600px;

@@ -24,12 +24,41 @@ define([
                     .animate({marginLeft: '0px'}, 50, function () {
                         $form.clearQueue();
                     });
+
                 return;
             }
 
-            $form.fadeOut('slow', function () {
-                $('#contact-complete').fadeIn();
-            });
+            $.post(
+                '/ajax/send',
+                {
+                    'email'   : $('#contact-email').val(),
+                    'phone'   : $('#contact-phone').val(),
+                    'message' : $('#contact-message').val()
+                },
+                function (response) {
+
+                    console.log(response);
+
+                    if (!response.ok) {
+                        $form
+                            .animate({marginLeft: '50px'}, 50)
+                            .animate({marginLeft: '0px'}, 50)
+                            .animate({marginLeft: '50px'}, 50)
+                            .animate({marginLeft: '0px'}, 50, function () {
+                                $form.clearQueue();
+                            });
+
+                        return;
+                    }
+
+                    $form.fadeOut('slow', function () {
+                        $('#contact-complete').fadeIn();
+                    });
+
+                },
+                'json'
+            );
+
         }
 
         function validate($fields) {
