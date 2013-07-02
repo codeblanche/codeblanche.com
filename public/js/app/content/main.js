@@ -1,7 +1,8 @@
 define([
     'jquery',
     'app/state',
-], function ($, state) {
+    'app/content/forms/contact',
+], function ($, state, contactForm) {
 
     var $container;
     var current;
@@ -14,6 +15,8 @@ define([
 
         function showNext () {
             $('#' + next).fadeIn('fast');
+
+            contactForm.init();
 
             current = next;
             next    = null;

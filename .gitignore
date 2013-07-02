@@ -1,1 +1,8 @@
-/nbproject
+.DS_Store
+.AppleDouble
+.idea
+public
+docs
+build
+vendor/*
+*.lock

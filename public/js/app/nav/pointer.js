@@ -18,14 +18,17 @@ define([
 
             $pointer = $('#navpointer');
 
-            self.moveTo(top);
+            animation = new Elastic($pointer, 0.5, 0.5);
 
-            //animation = new Elastic($pointer, 0.9);
-            //animation.setCssTarget('top', 175).start();
+            self.moveTo(top);
         };
 
         this.moveTo = function (top) {
+            /*
             $pointer.animate({ 'top': top }, 'fast');
+            /*/
+            animation.setCssTarget('top', top).start();
+            //*/
         }
 
     };
