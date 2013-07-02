@@ -14,6 +14,9 @@ define([
 
         function setContent () {
             content.show($current.data('name'));
+
+            $navItems.removeClass('active');
+            $current.addClass('active');
         }
 
         function handleMouseOver (event) {
@@ -34,9 +37,13 @@ define([
 
             pointer.moveTo(popstate.pointer);
 
+            $navItems.removeClass('active');
+
             history.pushState(popstate, $this.text(), popstate.url);
 
             $current = $this;
+
+            $current.addClass('active');
 
             setContent();
         }

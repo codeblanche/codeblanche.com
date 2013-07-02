@@ -1,7 +1,8 @@
 requirejs.config({
     baseUrl: 'js',
     paths: {
-        jquery  : 'lib/jquery-1.9.1.min'
+        jquery      : 'lib/jquery-1.9.1.min',
+        attention   : 'lib/jquery.attention'
     },
     packages: [
         "app",
