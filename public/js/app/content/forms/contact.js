@@ -87,7 +87,7 @@ define([
                     valid = /^(\+[0-9]{2,3})?(\s*\([0-9]{1}\)\s*)?(\s*[0-9]+){6,}$/i.test(value);
                     break;
                 case 'not-empty':
-                    valid = /^.+$/i.test(value);
+                    valid = /^.+$/mi.test(value);
                     break;
             }
 
