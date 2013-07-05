@@ -76,6 +76,7 @@ h2,h3,h4,h5,h6,p {
     width: 100%;
     padding: 0 35px 0 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     color: #f8f8f8;
     font-size: 0.7em;
     text-align: right;
@@ -87,6 +88,7 @@ h2,h3,h4,h5,h6,p {
     width: 100%;
     padding: 0 35px 0 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     color: #f8f8f8;
     font-size: 0.8em;
     text-align: right;
@@ -98,6 +100,7 @@ h2,h3,h4,h5,h6,p {
     width: 100%;
     padding: 0 35px 0 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     color: #f8f8f8;
     font-size: 0.8em;
     text-align: right;
@@ -123,6 +126,7 @@ h2,h3,h4,h5,h6,p {
 #nav > ul > li > a {
     display: block;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     width: 100%;
     line-height: 3.1em;
     color: white;
@@ -348,6 +352,7 @@ h2,h3,h4,h5,h6,p {
 }
 #contact label {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     display: block;
     width: 100px;
     float: left;
@@ -362,6 +367,7 @@ h2,h3,h4,h5,h6,p {
 }
 #contact input.text, #contact textarea.text {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     float: left;
     font-size: 1em;
     font-weight: normal;
@@ -439,6 +445,7 @@ i.no.icon { background: url(/img/no-icon-16.png) no-repeat; }
     margin-right: 5em;
     border: 1px solid #f0f0f0;
     -webkit-border-radius: 4px;
+    background: white;
     border-radius: 4px;
     padding: 10px 10px 10px 15px;
     color: #555;
@@ -581,6 +588,7 @@ i.no.icon { background: url(/img/no-icon-16.png) no-repeat; }
     margin-right: 5em;
     border: 1px solid #f0f0f0;
     -webkit-border-radius: 4px;
+    background: white;
     border-radius: 4px;
     padding: 10px 10px 10px 15px;
     color: #555;
