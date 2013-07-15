@@ -39,7 +39,9 @@ define([
 
             $navItems.removeClass('active');
 
-            history.pushState(popstate, $this.text(), popstate.url);
+            if (typeof history.pushState === 'function') {
+                history.pushState(popstate, $this.text(), popstate.url);
+            }
 
             $current = $this;
 
