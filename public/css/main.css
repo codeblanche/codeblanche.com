@@ -9,6 +9,7 @@ body, html { height: 100%; margin: 0; padding: 0; }
 body { background: #f9f9f9; font-size: 100%; }
 body, p, input, textarea, select { font-family: helvetical, sans-serif; }
 .clear { float: none; clear: both; }
+a, img { border: none; }
 
 h1 {
     font-size: 2em;

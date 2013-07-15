@@ -42,6 +42,9 @@ define([
             if (typeof history.pushState === 'function') {
                 history.pushState(popstate, $this.text(), popstate.url);
             }
+            else {
+                location.href = popstate.url;
+            }
 
             $current = $this;
 
