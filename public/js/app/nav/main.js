@@ -74,7 +74,7 @@ define([
 
             content.init();
 
-            $navItems   = $('#nav a');
+            $navItems   = $('#nav ul a');
 
             $navItems.each(function (index) {
                 var $this = $(this);
