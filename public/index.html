@@ -1,268 +1,655 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
-    <title>CodeBlanche</title>
-    <meta name="google-site-verification" content="i_bO_xZ9T-giYHvKrYL44VxWua8jzgF8QqZvvwYsowE" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta name="description" content="CodeBlanche is an internet solutions provider for custom websites and online applications">
+    <meta name="author" content="CodeBlanche">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+	<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="js-plugin/supersized/css/supersized.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="js-plugin/supersized/theme/supersized.shutter.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.transitions.css">
+	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+	<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
+	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+	<link rel="stylesheet" type="text/css" href="js-plugin/appear/nekoAnim.css">
+
+	<!-- Custom css -->
+	<link type="text/css" rel="stylesheet" href="css/layout.css">
+	<link type="text/css" id="colors" rel="stylesheet" href="css/colors.css">
+	<link type="text/css" rel="stylesheet" href="css/custom.css">
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<script src="js/modernizr-2.6.1.min.js"></script>
+
+    <!-- icons -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen" />
-
-    <script type="text/javascript" src="/js/lib/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="/js/lib/jquery.attention.js"></script>
-    <script type="text/javascript" data-main="js/main" src="js/require.js"></script>
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-38104019-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-
-    <!--[if gte IE 9]>
-      <style type="text/css">
-        .gradient {
-           filter: none;
-        }
-      </style>
-    <![endif]-->
-
+    <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
 </head>
-<body>
+<body class="header1 activateAppearAnimation" data-spy="scroll" data-target="#mainMenu">
+	<!-- Primary Page Layout 
+	================================================== -->
+	<!-- globalWrapper -->
+	<div id="globalWrapper" class="localscroll">
+		<header class="navbar-fixed-top">
+			<!-- header -->
+			<div id="mainHeader" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header">
+							<!-- responsive navigation -->
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- Logo -->
+							<a class="navbar-brand" href="#superSizedSlider"><img src="images/logo-md.png" alt="CodeBlanche Internet Solutions"/></a>
+						</div>
+						<div class="collapse navbar-collapse" id="mainMenu">
+							<!-- Main navigation -->
+							<ul class="nav navbar-nav pull-right">
+								<li class="primary active"><a href="#superSizedSlider" class="firstLevel" >Home</a></li>
+								<li class="sep"></li>
+                                <li class="primary"><a href="#news" class="firstLevel hasSubMenu" >News</a></li>
+                                <li class="sep"></li>
+                                <li class="primary"><a href="#services" class="firstLevel hasSubMenu" >What we do</a></li>
+                                <li class="sep"></li>
+                                <li class="primary"><a href="#works" class="firstLevel hasSubMenu" >Our Work</a></li>
+                                <li class="sep"></li>
+								<li id="lastMenu" class="last"><a href="#contact" class="firstLevel last">Contact</a></li>
+							</ul>
+							<!-- End main navigation -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- header -->
+		<!-- ======================================= content ======================================= -->
+		
+		<!-- slider -->
 
-    <div id="main">
+		<section id="superSizedSlider" class="scrollMenu">
+			<!--Arrow Navigation-->
+			<a id="prevslide" class="load-item"></a> <a id="nextslide" class="load-item"></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
 
-        <div id="logo">
-            <a href="/"><img src="/img/logo-std-large.png" width="408" height="79" border="0" /></a>
-        </div>
+						<div id="slidecaption"> </div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div id="nav" class="gradient">
-            <div id="navpointer">
-                <div><span></span></div>
-            </div>
+		<section id="content">
+			<!-- news -->
+			<section id="news" class="color2 shadowBox">
+				<div class="col-md-12 text-center pt40 pb40">
+					<h1>Latest news about our company</h1>
+					<h2 class="subTitle">Here, there and everywhere</h2>
+				</div>
+				<section class="pb40">
+					<div class="container imgHover">
+						<div class="row">
+							<!-- article -->
+							<article class="col-sm-4">
+								<section class="imgWrapper noMargin"> 
+									<img src="images/portfolio/vign6.jpg" class="img-responsive" alt="SEATTLEe template image news" /> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks"> 
+										<a href="images/portfolio/vign6.jpg" class="image-link" title="Zoom" >
+											<i class="icon-search iconRounded"></i>
+											<span>zoom</span>
+										</a> 
+									</div>
+								</div>
+								<section class="newsText color2">
+									<h3>New hair cut for the kids</h3>
+									<h4 class="date">September 12</h4>
+									<p>The Duchess took her choice, and was gone in a moment. 'Let's go on with the game,' the Queen said to Alice; and Alice was  too much frightened to say a word, but slowly followed her back to the  croquet-ground.</p>
+									<a href="blog-post.html" class="btn btn-sm"><i class="icon-right-open-mini"></i>read more</a>
+								</section>
+							</article>
+							<!-- article -->
+							<article class="col-sm-4">
+								<section class="imgWrapper noMargin"> 
+									<img src="/images/news/laposta-magento.png" class="img-responsive" alt="Magento Plugin for Laposta" width="100%" />
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks"> 
+										<a href="/images/news/laposta-magento.png" class="image-link" title="Zoom" >
+											<i class="icon-search iconRounded"></i>
+											<span>zoom</span>
+										</a> 
+									</div>
+								</div>
+								<section class="newsText color2">
+									<h3>Bringing Laposta and Magento webshops together</h3>
+									<h4 class="date">April 2014</h4>
+									<p>With this plugin developed for Laposta, Magento shop owners synchronize their customer account details and emails addresses for use in email marketing campaigns.</p>
+                                    <p>
+                                        <span class="label label-info">#php</span>
+                                        <span class="label label-info">#magento</span>
+                                        <span class="label label-info">#github</span>
+                                    </p>
+									<a href="http://www.magentocommerce.com/magento-connect/laposta.html" target="_blank" class="btn btn-sm"><i class="icon-right-open-mini "></i>read more</a>
+								</section>
+							</article>
+							<!-- article -->
+							<article class="col-sm-4">
+								<section class="imgWrapper noMargin"> 
+									<img src="images/portfolio/vign3.jpg" class="img-responsive" alt="SEATTLE template image news" /> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks"> 
+										<a href="images/portfolio/vign3.jpg" class="image-link" title="Zoom" >
+											<i class="icon-search iconRounded"></i>
+											<span>zoom</span>
+										</a> 
+									</div>
+								</div>
+								<section class="newsText color2">
+									<h3>Put ur handz in the air</h3>
+									<h4 class="date">November 24</h4>
+									<p>The Duchess took her choice, and was gone in a moment. 'Let's go on with the game,' the Queen said to Alice; and Alice was  too much frightened to say a word, but slowly followed her back to the  croquet-ground.</p>
+									<a href="blog-post.html" class="btn btn-sm"><i class="icon-right-open-mini"></i>read more</a>
+								</section>
+							</article>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- news -->
 
-            <ul>
-                <li><a class="blog" href="/blog" data-name="blog">Blog</a></li>
-                <li><a class="people" href="/people" data-name="people">People</a></li>
-                <li><a class="services" href="/services" data-name="services">Services</a></li>
-                <li><a class="products" href="/products" data-name="products">Products</a></li>
-                <li><a class="portfolio" href="/portfolio" data-name="portfolio">Portfolio</a></li>
-                <li><a class="contact" href="/contact" data-name="contact">Contact</a></li>
-            </ul>
+			<section id="services" class="pt40 pb40 color0">
 
-            <a href="http://www.020sbn.nl/" id="asbn-logo" target="_new"><img alt="amsterdam small business network" src="http://www.020sbn.nl/images/badges/sbn_badge150.png"></a>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center pb40">
+					<h1>Launch your new website today</h1>
+					<h2 class="subTitle" data-nekoanim="fadeInUp" data-nekodelay="50">Download Seattle Premium Website Template now!</h2>
+				</div>
+						
+						<div class="col-md-4 col-sm-6" data-nekoanim="fadeInUp" data-nekodelay="150">
+							<h2>Unleash Your Creativity!</h2>
 
-            <div id="kvk"><span>KvK</span> 57416389</div>
-            <div id="btw"><span>BTW</span> NL159229121B01</div>
-            <div id="copyright">&copy; Copyright CodeBlanche 2013</div>
-        </div>
+							<ul class="iconList list-unstyled">
+								<li>Choose your color scheme</li>
+								<li>Choose from 6 header styles</li>
+								<li>Choose your slider</li>
+								<li>Choose your pages templates</li>
+								<li>Mix and match templates section</li>
+								<li>Enhance your content with tons of features</li>
+							</ul>	
+						</div>
+						<div class="col-md-4 col-sm-6" data-nekoanim="fadeInUp" data-nekodelay="200">
+							<img src="images/theme-pics/creative-girl.jpg" alt="services" class="img-responsive">
+						</div>
+						<div class="col-md-4 col-sm-12" data-nekoanim="fadeInUp" data-nekodelay="250">
+							<h2>Testimonial</h2>
+							<article class="boxTestimonial">
+								
+								<blockquote>
+									Every man has his technique, and they are all different. When you know mine you'll be dead.
+								</blockquote>
+								
+								<div class="clientIcon">
+									<img src='images/clients/client3.jpg' alt="client">
+									<span><strong>Patrick Michael</strong>&mdash; Kung Fu Master</span>
+								</div>
 
-        <div id="content">
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <div id="blog" class="content-block">
-                <h1>Blog</h1>
-                <ul class="blog-list">
-                    <li class="blog-entry span3">
-                        <h2>HuisMakeOver.nl Launched<span class="date">27 October 2013</span></h2>
-                        <hr />
-                        <p>CodeBlanche is proud to launch the new website for HuisMakeOver. Be inspired by the new look that follows latest web trends at <a href="http://huismakeover.nl" target="_blank">huismakeover.nl</a></p>
-                    </li>
-                    <li class="blog-entry span3">
-                        <h2>What year is it?<span class="date">15 July 2013</span></h2>
-                        <hr />
-                        <p>It's the year of CodeBlanche. Still not sure? Have a look at <a href="http://year.codeblanche.com" target="_blank">year.codeblanche.com</a> for proof, or just a useful year calendar to add to your favourites.</p>
-                    </li>
-                    <li class="blog-entry span3">
-                        <h2>Website launch<span class="date">2 July 2013</span></h2>
-                        <hr />
-                        <p>It's finally here. Proud to launch our new CodeBlanche website showcasing a few of our <a href="/products">products</a> and <a href="/services">services</a>. We can boast only a few projects in our <a href="/portfolio">portfolio</a> under the CodeBlanche badge for now but we hope to have more to show you in the near future.</p>
-                    </li>
-                    <li class="blog-entry span3">
-                        <h2>Stepping out to start CodeBlanche<span class="date">8 March 2013</span></h2>
-                        <hr />
-                        <p>The drive for quality and simple usability brings with it the need to create a new force in the world of Internet solutions. We put the complicated rules and processes where they belong and focus on giving the user a natural simplicity the Internet so desperately needs. Make <a href="/contact">contact</a> to see how we can simplify your web solutions.</p>
-                    </li>
-                </ul>
-                <div class="clear"></div>
-            </div>
+			<section id="paralaxSlice2" data-stellar-background-ratio="0.5">
+				<div class="maskParent">
+					<div class="paralaxMask"></div>
+					<div class="paralaxText container noPaddingBottom">
+						<blockquote class="pb15">
+							<p>Seattle is versatile & easy to use</p>
+						</blockquote>
+						<img src="images/theme-pics/screens-demo.png" alt="services" class="img-responsive marginAuto mt30" data-nekoanim="fadeInUp" data-nekodelay="50">
+					</div>
+				</div>
+			</section>
 
-            <div id="people" class="content-block">
-                <h1>People</h1>
-                <ul class="people-list">
-                    <li class="people-entry">
-                        <img src="/data/people/thumbs/headshot_mvg.jpg" width="150" />
-                        <h2>Merten van Gerven</h2>
-                        <hr />
-                        <p>Getalenteerd projectmanager met ruim 12 jaar ervaring in het aansturen en ontwikkelen van online ontwerp en web applicaties. Gespecialiseerd in het uitwerken en coördineren van totaalconcepten. Van concept en planning tot programmering, ontwikkeling, ondersteuning en trouble-shooting. Een bewezen achtergrond in het verbeteren van de efficiency binnen geautomatiseerde omgevingen en (werk)processen.</p>
-                        <p>Effectief in het optimaliseren van verouderde legacy-systemen en applicaties. Door gebruik te maken van nieuwe oplossingen evenals de implementatie van geavanceerde technologieën en methodologieën kan ontwikkeling beter geleidt worden.</p>
-                        <div class="clear"></div>
-                    </li>
-                </ul>
-            </div>
 
-            <div id="services" class="content-block">
-                <h1>Services</h1>
-                <ul class="services-list">
-                    <li class="services-entry">
-                        <h2>Consulting</h2>
-                        <hr />
-                        <p>Ieder project kent problemen en tegenvallers. De uitdaging zit in het creëren van reeële oplossingen. Met een getraind oog begrijpen wij de grote lijnen en weten hoe een eindstreep te bereiken. Met een combinatie van begeleiding, kennis en inlevingsvermogen blijven wij op koers.</p>
-                    </li>
-                    <li class="services-entry">
-                        <h2>Website ontwikkelingen</h2>
-                        <hr />
-                        <p>Is uw website toe aan een APK of Facelift? Met kleine aanpassingen een verandering tot stand brengen, of helemaal vanaf het begin aan de slag. Maatwerk of niet, een duidelijke website is het eerste gezicht van uw bedrijf. Maak een goede eerste indruk. Wij maken graag een vrijblijvende offerte op maat, wat uw wens ook mag zijn.</p>
-                    </li>
-                    <li class="services-entry">
-                        <h2>Internet applicaties</h2>
-                        <hr />
-                        <p>Onze specialiteit. Onze passie. Eenvoud is de ultieme wijsheid als het gaat om het doorbreken van saaie (werk)processen en taken.  Door tijd verslindende werkzaamheden te automatiseren maakt u belangrijke tijd en middelen vrij. Bovendien worden menselijke fouten zo goed als mogelijk uitgesloten. Al met al een proces volgens Code Blanche behalve een investering, voornamelijk rendement op zal leveren.</p>
-                    </li>
-                    <li class="services-entry">
-                        <h2>Freelance</h2>
-                        <hr />
-                        <p>Flexibele kracht nodig? Wij laten ons inhuren voor projecten. Neem contact op voor meer informatie. Inlevingsvermogen en flexibiliteit.</p>
-                    </li>
-                </ul>
-            </div>
+			<section id="works" class="color0 pt40 pb40">
+				
+				<div class="col-md-12 text-center pb40">
+					<h1>Our Work</h1>
+					<h2 class="subTitle">Latest cool projects we've been working on</h2>
+				</div>
+				
+				<section id="portfolioSection"> 
+					<div class="container clearfix">
+						<div class="row">
+							<nav id="filter" class="span12 text-center">
+								<ul>
+									<li><a href="" class="current btn btn-sm" data-filter="*">All</a></li>
+									<li><a href=""  class="btn btn-sm" data-filter=".graphics" >Graphics</a></li>
+									<li><a href=""  class="btn btn-sm" data-filter=".women">Women</a></li>
+									<li ><a href="" class="btn btn-sm" data-filter=".cats">Cats</a></li>
+								</ul>
+							</nav>
+							<div class="portfolio-items  isotopeWrapper clearfix imgHover" id="3">
+								<!-- portfolio item -->
+								<article class="col-sm-4 isotopeItem women">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/vign6.jpg" class="img-responsive imgBorder">
+									</section>
+									<div class="mediaHover">
+										<div class="mask"></div>
+										<div class="iconLinks"> 
+											<a href="portfolio-project-fullwidth-image.html" title="link">
+												<i class="icon-picture iconRounded"></i>
+												<span>link</span>
+											</a> 
+											<a href="images/portfolio/zoom6.jpg" class="image-link" title="Full width image" >
+												<i class="icon-search iconRounded"></i>
+												<span>zoom</span>
+											</a> 
+										</div>
+									</div>
+									<section class="boxContent">
+										<h3>Full width image</h3>
+										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br />
+											<a href="portfolio-project-fullwidth-image.html" class="moreLink">&rarr; read more</a>
+										</p>
+									</section>
+								</article>
+								<!-- portfolio item -->
+								<article class="col-sm-4 isotopeItem cats">
+									<section class="imgWrapper">
+										<img alt="" src="images/portfolio/vign1.jpg" class="img-responsive imgBorder">
+									</section>
+									<div class="mediaHover">
+										<div class="mask"></div>
+										<div class="iconLinks"> 
+											<a href="portfolio-project-fullwidth-video.html" title="link" class="portfolioSheet sizer">
+												<i class="icon-videocam iconRounded"></i>
+												<span>link</span>
+											</a> 
+											<a href="http://www.youtube.com/watch?v=aqrtF7L86NQ" class="image-iframe" title="Video Popup" >
+												<i class="icon-search iconRounded"></i>
+												<span>video</span>
+											</a> 
+										</div>   
+									</div>
+									<section class="boxContent">
+										<h3>Video YouTube</h3>
+										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+											<a href="portfolio-project-fullwidth-video.html" class="moreLink">&rarr; read more</a> </p>
+										</section>
+									</article>
+									<!-- portfolio item -->
+									<article class="col-sm-4 isotopeItem graphics">
+										<section class="imgWrapper">
+											<img alt="" src="images/portfolio/vign7.jpg" class="img-responsive imgBorder">
+										</section>
+										<div class="mediaHover">
+											<div class="mask"></div>
+											<div class="iconLinks"> 
+												<a href="portfolio-project-fullwidth-video.html" title="link">
+													<i class="icon-videocam iconRounded"></i>
+													<span>link</span>
+												</a> 
+												<a href="http://vimeo.com/ondemand/5335/75660130" class="image-iframe" title="Video Popup" >
+													<i class="icon-search iconRounded"></i>
+													<span>video</span>
+												</a> 
+											</div>
+										</div>
+										<section class="boxContent">
+											<h3>Video Vimeo</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+												<a href="portfolio-project-fullwidth-video.html" class="moreLink">&rarr; read more</a>
+											</p>
+										</section>
+									</article>
+									<!-- portfolio item -->
+									<article class="col-sm-4 isotopeItem cats">
+										<section class="imgWrapper">
+											<img alt="" src="images/portfolio/vign3.jpg" class="img-responsive imgBorder">
+										</section>
+										<div class="mediaHover">
+											<div class="mask"></div>
+											<div class="iconLinks"> 
+												<a href="portfolio-project-fullwidth-carousel.html" title="link">
+													<i class="icon-camera iconRounded"></i>
+													<span>link</span>
+												</a> 
+												<a href="images/portfolio/carousel-1.jpg" class="image-link" title="Zoom" data-gallery="images/portfolio/carousel-2.jpg,images/portfolio/carousel-3.jpg">
+													<i class="icon-search iconRounded"></i>
+													<span>gallery</span>
+												</a> 
+											</div>
+										</div>
+										<section class="boxContent">
+											<h3>Gallery</h3>
+											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+												<a href="portfolio-project-fullwidth-carousel.html" class="moreLink">&rarr; read more</a>
+											</p>
+										</section>
+									</article>
+									<!-- portfolio item -->
+									<article class="col-sm-4 isotopeItem cats">
+										<section class="imgWrapper">
+											<img alt="" src="images/portfolio/vign2.jpg" class="img-responsive imgBorder">
+										</section>
+										<div class="mediaHover">
+											<div class="mask"></div>
+											<div class="iconLinks">
+												<a href="portfolio-project-fullwidth-carousel.html" title="link">
+													<i class="icon-picture iconRounded"></i>
+													<span>link</span>
+												</a>
+												<a href="images/portfolio/zoom2.jpg" class="image-link" title="Gallery Popup">
+													<i class="icon-search iconRounded"></i>
+													<span>zoom</span>
+												</a>
+											</div>
+										</div>
+										<section class="boxContent">
+											<h3>Lorem ipsum dolor sit amet</h3>
+											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+												<a href="#" class="moreLink">&rarr; read more</a>
+											</p>
+										</section>
+									</article>
+									<!-- portfolio item -->
+									<article class="col-sm-4 isotopeItem women">
+										<section class="imgWrapper">
+											<img alt="" src="images/portfolio/vign4.jpg" class="img-responsive imgBorder">
+										</section>
+										<div class="mediaHover">
+											<div class="mask"></div>
+											<div class="iconLinks">
+												<a href="portfolio-project-fullwidth-image.html" title="link">
+													<i class="icon-picture iconRounded"></i>
+													<span>link</span>
+												</a>
+												<a href="images/portfolio/zoom4.jpg" class="image-link" title="Zoom">
+													<i class="icon-search iconRounded"></i>
+													<span>zoom</span>
+												</a>
+											</div>
+										</div>
+										<section class="boxContent">
+											<h3>Lorem ipsum dolor sit amet</h3>
+											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+												<a href="#" class="moreLink">&rarr; read more</a>
+											</p>
+										</section>
+									</article>
+									<!-- portfolio item -->
+									<article class="col-sm-4 isotopeItem graphics">
+										<section class="imgWrapper">
+											<img alt="" src="images/portfolio/vign8.jpg" class="img-responsive imgBorder">
+										</section>
+										<div class="mediaHover">
+											<div class="mask"></div>
+											<div class="iconLinks">
+												<a href="portfolio-project-fullwidth-image.html" title="link">
+													<i class="icon-picture iconRounded"></i>
+													<span>link</span>
+												</a>
+												<a href="images/portfolio/zoom8.jpg" class="image-link" title="Zoom" >
+													<i class="icon-search iconRounded"></i>
+													<span>zoom</span>
+												</a>
+											</div>
+										</div>
+										<section class="boxContent">
+											<h3>Lorem ipsum dolor sit amet</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.<br />
+												<a href="#" class="moreLink">&rarr; read more</a>
+											</p>
+										</section>
+									</article>
+									<!-- portfolio item -->
+									<article class="col-sm-4 isotopeItem women">
+										<section class="imgWrapper">
+											<img alt="" src="images/portfolio/vign5.jpg" class="img-responsive imgBorder">
+										</section>
+										<div class="mediaHover">
+											<div class="mask"></div>
+											<div class="iconLinks">
+												<a href="portfolio-project-fullwidth-image.html" title="link">
+													<i class="icon-picture iconRounded"></i>
+													<span>link</span>
+												</a>
+												<a href="images/portfolio/zoom5.jpg" class="image-link" title="Zoom" >
+													<i class="icon-search iconRounded"></i>
+													<span>zoom</span>
+												</a>
+											</div>
+										</div>
+										<section class="boxContent">
+											<h3>Lorem ipsum dolor sit amet</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.<br />
+												<a href="#" class="moreLink">&rarr; read more</a> </p>
+											</section>
+										</article>
+										<!-- portfolio item -->
+										<article class="col-sm-4 isotopeItem graphics">
+											<section class="imgWrapper">
+												<img alt="" src="images/portfolio/vign9.jpg" class="img-responsive imgBorder">
+											</section>
+											<div class="mediaHover">
+												<div class="mask"></div>
+												<div class="iconLinks">
+													<a href="portfolio-project-fullwidth-carousel.html" title="link">
+														<i class="icon-camera iconRounded"></i>
+														<span>link</span>
+													</a>
+													<a href="images/portfolio/zoom9.jpg" class="image-link" title="Zoom">
+														<i class="icon-search iconRounded"></i>
+														<span>zoom</span>
+													</a>
+												</div>
+											</div>
+											<section class="boxContent">
+												<h3>Lorem ipsum dolor sit amet</h3>
+												<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+													<a href="#" class="moreLink">&rarr; read more</a>
+												</p>
+											</section>
+										</article>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
 
-            <div id="products" class="content-block">
-                <h1>Products</h1>
-                <ul class="product-list">
-                    <li class="product-entry">
-                        <a target="_blank" href="https://github.com/CodeBlanche/Entity"><img src="/img/github-24.png" width="24" height="24"></a>
-                        <h2>Entity <a class="link" target="_blank" href="https://github.com/CodeBlanche/Entity">https://github.com/CodeBlanche/Entity</a></h2>
-                        <hr />
-                        <p>An open source module to super charge entities (data objects) in PHP. This project lacking good documentation at the moment which remains on the CodeBlanche to do list.</p>
-                        <p><span class="tag tag-php">PHP</span></p>
-                    </li>
-                    <li class="product-entry">
-                        <a target="_blank" href="https://github.com/CodeBlanche/Depend"><img src="/img/github-24.png" width="24" height="24"></a>
-                        <h2>Depend <a class="link" target="_blank" href="https://github.com/CodeBlanche/Depend">https://github.com/CodeBlanche/Depend</a></h2>
-                        <hr />
-                        <p>Another open source endeavour to make a PHP developers' life easier by resolving class dependencies, promoting loose coupling of components, and sharing of components and services.</p>
-                        <p><span class="tag tag-php">PHP</span></p>
-                    </li>
-                    <li class="product-entry">
-                        <a target="_blank" href="https://github.com/CodeBlanche/Web"><img src="/img/github-24.png" width="24" height="24"></a>
-                        <h2>Web <a class="link" target="_blank" href="https://github.com/CodeBlanche/Web">https://github.com/CodeBlanche/Web</a></h2>
-                        <hr />
-                        <p>A module providing some essential tools for working with web requests and responses. This module is currently under development and will soon be added to the CodeBlanche open source collection.</p>
-                        <p><span class="tag tag-php">PHP</span></p>
-                    </li>
-                    <!--<li class="product-entry">-->
-                    <li class="product-entry">
-                        <h2>Coming soon...</h2>
-                        <hr />
-                        <p>MVC (Model, View, Controller)</p>
-                        <p>Template</p>
-                        <p>Config</p>
-                        <p>DBAL (Data Base Access Layer)</p>
-                        <p>ORM (Object Relational Mapping)</p>
-                    </li>
-                    <!--<a href="https://github.com/CodeBlanche/MVC"><img src="/img/github-24.png" width="24" height="24"></a>-->
-                        <!--<h2>MVC (Model, View, Controller) <a class="link" href="https://github.com/CodeBlanche/MVC">https://github.com/CodeBlanche/MVC</a></h2>-->
-                        <!--<hr />-->
-                        <!--<p>A basis for the highly popular MVC architectural pattern for PHP projects</p>-->
-                        <!--<p><span class="tag tag-php">PHP</span></p>-->
-                    <!--</li>-->
-                    <!--<li class="product-entry">-->
-                        <!--<a href="https://github.com/CodeBlanche/Template"><img src="/img/github-24.png" width="24" height="24"></a>-->
-                        <!--<h2>Template <a class="link" href="https://github.com/CodeBlanche/Template">https://github.com/CodeBlanche/Template</a></h2>-->
-                        <!--<hr />-->
-                        <!--<p>A template processing enging currently under development</p>-->
-                        <!--<p><span class="tag tag-php">PHP</span></p>-->
-                    <!--</li>-->
-                    <!--<li class="product-entry">-->
-                        <!--<a href="https://github.com/CodeBlanche/Config"><img src="/img/github-24.png" width="24" height="24"></a>-->
-                        <!--<h2>Config <a class="link" href="https://github.com/CodeBlanche/Config">https://github.com/CodeBlanche/Config</a></h2>-->
-                        <!--<hr />-->
-                        <!--<p>A configuration container module for PHP projects</p>-->
-                        <!--<p><span class="tag tag-php">PHP</span></p>-->
-                    <!--</li>-->
-                    <!--<li class="product-entry">-->
-                        <!--<a href="https://github.com/CodeBlanche/DBAL"><img src="/img/github-24.png" width="24" height="24"></a>-->
-                        <!--<h2>DBAL (Data Base Access Layer) <a class="link" href="https://github.com/CodeBlanche/DBAL">https://github.com/CodeBlanche/DBAL</a></h2>-->
-                        <!--<hr />-->
-                        <!--<p>A database access layer for PHP projects</p>-->
-                        <!--<p><span class="tag tag-php">PHP</span></p>-->
-                    <!--</li>-->
-                    <!--<li class="product-entry">-->
-                        <!--<a href="https://github.com/CodeBlanche/ORM"><img src="/img/github-24.png" width="24" height="24"></a>-->
-                        <!--<h2>ORM (Object Relational Mapping) <a class="link" href="https://github.com/CodeBlanche/ORM">https://github.com/CodeBlanche/ORM</a></h2>-->
-                        <!--<hr />-->
-                        <!--<p>An ORM structure for PHP projects</p>-->
-                        <!--<p><span class="tag tag-php">PHP</span></p>-->
-                    <!--</li>-->
-                </ul>
-            </div>
 
-            <div id="portfolio" class="content-block">
-                <h1>Portfolio</h1>
-                <ul class="portfolio-list">
-                    <li class="portfolio-entry">
-                        <img src="/data/portfolio/thumbs/huismakeover.png" width="250" />
-                        <h2>HuisMakeOver Laminaat Order Form <a class="link" target="_blank" href="http://huismakeover.nl/laminaat">http://huismakeover.nl/laminaat</a></h2>
-                        <hr />
-                        <p>A tablet ready highly user oriented order form. Much focus was placed on simplicity and clarity for the end user by removing visual-noise and unnecessary gimmicks, while maintaining an aesthetic balance between form and function.</p>
-                        <p><span class="tag tag-js">JavaScript</span><span class="tag tag-html">HTML</span><span class="tag tag-php">PHP</span><span class="tag tag-mysql">MySQL</span></p>
-                        <div class="clear"></div>
-                    </li>
-                    <li class="portfolio-entry">
-                        <img src="/data/portfolio/thumbs/vonjac.png" width="250" />
-                        <h2>Vonjac juice</h2>
-                        <hr />
-                        <p>A test project to showcase an online order build system. By selecting additional products for your order, the total would be automatically calculated client side to give (potential) customers an expected cost before they confirm the order.</p>
-                        <p><span class="tag tag-js">JavaScript</span><span class="tag tag-html">HTML</span></p>
-                        <div class="clear"></div>
-                    </li>
-                    <li class="portfolio-entry" style="min-height: 165px">
-                        <img src="/data/portfolio/thumbs/dropzone.png" width="250" />
-                        <h2>VNDLGY Dropzone</h2>
-                        <hr />
-                        <p>A private and secure portal was created for the VNDLGY owner to interact with trend spotters collect valuable market data for analysis.</p>
-                        <p><span class="tag tag-js">JavaScript</span><span class="tag tag-html">HTML</span><span class="tag tag-php">PHP</span><span class="tag tag-sql">MySQL</span></p>
-                        <div class="clear"></div>
-                    </li>
-                    <li class="portfolio-entry">
-                        <a class="img" href="http://vndlgy.com" target="_blank"><img src="/data/portfolio/thumbs/vndlgy.png" width="250" /></a>
-                        <h2>VNDLGY (Vondology) <a class="link" target="_blank" href="http://vndlgy.com">http://vndlgy.com</a></h2>
-                        <hr />
-                        <p>A flash website with dynamic multilingual content. Not just a pretty face, this website has some smarts under the hood as well. XML driven content management to allow easy modifications to the text without requiring a complete rework of the pages in question. A custom menu was built specifically for this site with elastic effects to make it just that much nicer.</p>
-                        <p><span class="tag tag-flash">Flash</span><span class="tag tag-js">JavaScript</span><span class="tag tag-html">HTML</span><span class="tag tag-php">PHP</span><span class="tag tag-xml">XML</span></p>
-                        <div class="clear"></div>
-                    </li>
-                </ul>
-            </div>
+					<!-- parallax testimonial --> 
+					<section id="paralaxSlice3" data-stellar-background-ratio="0.5">
+						<div class="maskParent">
+							<div class="paralaxMask"></div>
+							<div class="paralaxText container" data-nekoanim="fadeIn" data-nekodelay="50">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="owl-carousel nekoDataOwl" data-neko_items="1" data-neko_singleitem="true" data-neko_paginationnumbers="true" data-neko_transitionstyle="fade">
 
-            <div id="contact" class="content-block">
-                <div id="contact-complete"><span class="hero">Thank you</span> We'll get back to you very soon.</div>
-                <form action="/make-contact" method="post" id="contact-form">
-                    <h1>Contact</h1>
-                    <label for="contact-email">Email</label>
-                    <input type="email" class="text" data-validate="email" id="contact-email" />
-                    <i class="icon"></i>
-                    <label for="contact-phone">Phone</label>
-                    <input type="tel" class="text" data-validate="phone" id="contact-phone" />
-                    <i class="icon"></i>
-                    <label for="contact-message">Message</label>
-                    <textarea rows="3" class="text" data-validate="not-empty" id="contact-message"></textarea>
-                    <i class="icon"></i>
-                    <input type="submit" value="Send" id="contact-send" />
-                </form>
-            </div>
+											<div class="item">
+												<img src="http://huismakeover.nl/2.0/img/logo-hmo.png" class="mb15" alt="client">
+												<blockquote>Inlevingsvermogen, flexibiliteit, kennis, prijs én kwaliteit staan bij CodeBlanche goed in balans. Daarom heeft HuisMakeOver gekozen om al haar ICT zaken bij CodeBlanche onder te brengen.<br/><small>Arjan van Jaaren, Commercieel Directeur HuisMakeOver</small></blockquote>
+											</div>
 
-        </div>
+											<div class="item">
+												<img src="http://www.dutchdrops.nl/media/top_logo.jpg" class="mb15" alt="client">
+												<blockquote>Fusce placerat semper gravida. Mauris molestie turpis nec lobortis vestibulum. In vitae hendrerit lacus. Cras facilisis turpis vitae nunc euismod. <br/><small>Dutch Drops</small></blockquote>
+											</div>
 
-        <div class="clear"></div>
+											<div class="item">
+												<img src="http://laposta.nl/assets/static/img/home/logo.png" class="mb15" alt="client">
+												<blockquote>CodeBlanche heeft voor ons een aantal opdrachten gedaan, voornamelijk complexere api-koppelingen. Ik heb hem leren kennen als deskundig en betrouwbaar. Zijn code is modern opgezet en goed gedocumenteerd, en hij bleef na oplevering beschikbaar om verbeteringen door te voeren.<br/><small>Stijn van der Ree, Laposta</small></blockquote>
+											</div>
 
-    </div>
+										</div>
 
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- parallax testimonial --> 
+					<!-- contact -->
+					<section id="contact" class="color0">
+						<div class="col-md-12 text-center pt30 pb30">
+							<h1>Drop us a line</h1>
+							<h2 class="subTitle">We'd love to hear from you</h2>
+						</div>
+						<div class="container">
+
+							<div class="row">
+								<div class="col-sm-4" data-nekoanim="fadeInUp" data-nekodelay="50">
+									<h4>Address:</h4>
+									<address>
+                                        Crown Business Center<br/>
+                                        A. Hofmanweg 5a<br/>
+										2031 BH, Haarlem, NL<br/>
+									</address>
+									<h4>Phone:</h4>
+									<address>
+                                        <i class="icon-phone"></i>&nbsp;+31 (0) 2 3750 5141<br/>
+                                        <i class="icon-mobile"></i>&nbsp;+31 (0) 6 1111 8445<br/>
+									</address>
+								</div>
+								<form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
+									<div class="col-sm-4" data-nekoanim="fadeInUp" data-nekodelay="150"> 
+										<div class="form-group">
+											<label for="name">Name</label>
+											<input type="text" class="form-control" name="name" id="name" placeholder="Enter name"  title="Please enter your name (at least 2 characters)"/>
+										</div>
+										<div class="form-group">
+											<label for="email">Email</label>
+											<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address"/>
+										</div>
+										<div class="form-group">
+											<label for="phone">Phone</label>
+											<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter phone" title="Please enter a valid phone number (at least 10 characters)">
+										</div>
+									</div>
+									<div class="col-sm-4" data-nekoanim="fadeInUp" data-nekodelay="250">
+										<div class="form-group">
+											<label for="comments">Comments</label>
+											<textarea name="comment" class="form-control" id="comments" cols="3" rows="10" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+										</div>
+									</div>
+									<div class="col-md-8 col-md-offset-4">
+										<div class="result"></div>
+										<button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div id="mapWrapper" class="mt30"></div>
+					</section>
+
+
+
+				</section>
+				<!-- end content -->
+				
+				<!-- footer -->
+				<footer>
+					<section id="mainFooter" data-nekoanim="fadeInUp" data-nekodelay="200">
+						<div class="container" id="footer">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="footerWidget">
+										<img src="images/logo-sm.png" alt="CodeBlanche" id="footerLogo" />
+										<p><a href="http://codeblanche.com" title="CodeBlanche">CodeBlanche</a> is a web design and development studio. We build responsive HTML5 and CSS3 websites, integrating best web design practices and up-to-date web technologies to create great user experiences.</p>
+									</div>
+								</div>
+
+								<div class="col-sm-4">
+									<div class="footerWidget">
+
+										<h3>&nbsp;</h3>
+										<address>
+											<p> <i class="icon-location"></i>&nbsp;A. Hofmanweg 5a<br>
+												2031 BH, Haarlem, NL <br>
+												<i class="icon-phone"></i>&nbsp;+31 (0) 23 750 51 41<br>
+												<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:info@codeblanche.com">info@codeblanche.com</a> </p>
+											</address>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="footerWidget">
+											<h3>Follow us, we are social</h3>
+											<ul class="socialNetwork">
+												<li><a href="#" class="tips" title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
+											</ul>     
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</section>
+
+						<section  id="footerRights">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<p>Copyright © 2014 <a href="http://codeblanche.com" target="blank">CodeBlanche</a> / All rights reserved.</p>
+									</div>
+
+								</div>
+							</div>
+						</section>
+					</footer>
+					<!-- End footer -->
+				</div>
+				<!-- global wrapper -->
+	<!-- End Document 
+	================================================== -->
+	<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+	<script type="text/javascript" src="js-plugin/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js-plugin/supersized/js/supersized.3.2.7.min.js"></script>
+	<script type="text/javascript" src="js-plugin/supersized/theme/supersized.shutter.min.js"></script>
+	<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.sloppy-masonry.min.js"></script>
+	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="js-plugin/appear/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
