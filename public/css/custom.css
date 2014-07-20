@@ -30,3 +30,15 @@ footer a, footer a:hover {
 #paralaxSlice4 {
     background-image: url('/images/theme-pics/bench.jpg');
 }
+
+.label {
+    padding: .3em .7em;
+    font-size: 80%;
+}
+
+.clear-left {
+    clear: left;
+}
+.clear-right {
+    clear: right;
+}

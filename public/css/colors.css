@@ -640,10 +640,14 @@ label.error {
 .boxContent h2, .boxContent h3 {
 	color:#525252;
 }
+
 /*** Feature box **/
 
 .featureBox i{color:#525252;} 
-.featureBox .boxContent{background:none;} 
+.featureBox .boxContent{background:none;}
+
+.featureBox.invert { background: #777; color: #fff;}
+.featureBox.invert h2, .featureBox.invert p, .featureBox.invert i { color: #fff; border-color: #fff; }
 
 /*** Focus box **/
 

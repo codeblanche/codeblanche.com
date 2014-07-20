@@ -248,9 +248,9 @@ ul.dropdown-menu {
 
 /* feature boxes */
 .featureBox {text-align: center;}
-.featureBox i { display:inline-block; }
-.featureBox h2 { margin-bottom: 0.5em; }
-
+.featureBox .boxContent { border: 0; }
+.featureBox i { display: block; margin: 1em auto; }
+.featureBox h2 { margin-bottom: 0.5em; text-align: center; }
 
 /* box icons */
 .boxIcon a{
@@ -502,9 +502,10 @@ ul.quickMenu li a.linkLeft {
 		padding-top:4em;
 	}
 	/* feature box */
-	.featureBox i, .featureBox a {float:left;}
-	.featureBox .boxContent {overflow:hidden; padding-top:0; margin-bottom:22px;}
-	.featureBox .boxContent h2, .featureBox .boxContent p {text-align: left;}
+	/*.featureBox i, .featureBox a {float:left;}*/
+	.featureBox .boxContent {overflow:hidden; padding-top:0; padding-bottom:0;}
+	.featureBox .boxContent h2 { text-align: center;}
+    .featureBox .boxContent p {text-align: justify;}
 
 	.featureBox.posLeft .boxContent h2, .featureBox.posLeft .boxContent p {text-align: left;} 
 
@@ -518,7 +519,7 @@ ul.quickMenu li a.linkLeft {
 	}
 
 	/* feature box */
-	.featureBox.posLeft i, .featureBox.posLeft a {float:right;}
+	/*.featureBox.posLeft i, .featureBox.posLeft a {float:right;}*/
 	.featureBox.posLeft .boxContent h2, .featureBox.posLeft .boxContent p {text-align: right;} 
 
 	
