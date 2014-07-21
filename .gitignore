@@ -1,6 +1,7 @@
 .DS_Store
 .AppleDouble
 .idea
+.psd
 docs
 build
 vendor/*
