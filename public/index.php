@@ -5,22 +5,19 @@ require '../vendor/autoload.php';
 $app = new \Slim\Slim();
 
 $app->post('/ajax/send', function () {
-
-    header('Content-Type: application/json');
-
+    $name    = filter_input(INPUT_POST, 'name');
     $email   = filter_input(INPUT_POST, 'email');
     $phone   = filter_input(INPUT_POST, 'phone');
-    $message = filter_input(INPUT_POST, 'message');
+    $message = filter_input(INPUT_POST, 'comment');
 
-    if (empty($email) || empty($phone) || empty($message)) {
-        echo json_encode(array('ok' => false));
-
-        return;
+    if (empty($name) || empty($email) || empty($phone)) {
+        echo 'Oops! Some values seem to be missing.';
     }
 
     $content = <<<EOM
-Email:  $email
-Phone:  $phone
+Name  :  $name
+Email :  $email
+Phone :  $phone
 ---------------------------------------------------
 $message
 EOM;
@@ -32,7 +29,12 @@ EOM;
 
     $result = mail('info@codeblanche.com', 'Contact on CodeBlanche', $content, implode("\r\n", $headers));
 
-    echo json_encode(array('ok' => $result));
+    if ($result) {
+        echo "Thanks for contacting us. We'll be in touch with you shortly.";
+    }
+    else {
+        echo "Something seems to have gone wrong. Perhaps you could email us instead <a href=\"mailto:info@codeblanche.com\">info@codeblanche.com</a>";
+    }
 });
 
 $app->get('/', function () {

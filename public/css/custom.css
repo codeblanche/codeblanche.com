@@ -42,3 +42,10 @@ footer a, footer a:hover {
 .clear-right {
     clear: right;
 }
+
+.portfolio-items .imgWrapper img {
+    border: 10px solid #eaeaea;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

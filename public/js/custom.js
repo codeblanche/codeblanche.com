@@ -711,9 +711,17 @@ jQuery(function () {
       errorPlacement : function (error, element) {
         error.insertBefore(element);
       },
-      submitHandler  : function (form) {
-        jQuery(form).ajaxSubmit({
-          target : ".result"
+      submitHandler  : function (form, event) {
+        event.preventDefault();
+
+        var $form = jQuery(form);
+        var data = $form.serialize();
+
+        jQuery.post($form.prop('action'), data, function (response) {
+          $('.result').html(response);
+          $('#submit').hide();
+
+          $form.get(0).reset();
         });
       },
       onkeyup        : false,
@@ -728,16 +736,12 @@ jQuery(function () {
           email    : true
         },
         phone    : {
-          required  : true,
+          required  : false,
           minlength : 10,
           digits    : true
         },
-        category : {
-          required : true
-        },
         comment  : {
-          required  : true,
-          minlength : 10,
+          required  : false,
           maxlength : 350
         }
       }
