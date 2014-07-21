@@ -1,0 +1,51 @@
+/* Put your custom css here */
+
+body {
+    position: relative;
+}
+textarea#comments {
+    height: 216px;
+}
+footer a, footer a:hover {
+    color: #777;
+}
+#footerRights a {
+    color: #999;
+}
+.navbar-brand {
+    padding-top: 25px;
+}
+#slidecaption h1 {
+    margin: 50% 0 0 0;
+}
+#paralaxSlice1 {
+    background-image: url('/images/theme-pics/bench.jpg');
+}
+#paralaxSlice2 {
+    background-image: url('/images/theme-pics/bench.jpg');
+}
+#paralaxSlice3 {
+    background-image: url('/images/theme-pics/bg-marble.jpg');
+}
+#paralaxSlice4 {
+    background-image: url('/images/theme-pics/bench.jpg');
+}
+
+.label {
+    padding: .3em .7em;
+    font-size: 80%;
+}
+
+.clear-left {
+    clear: left;
+}
+.clear-right {
+    clear: right;
+}
+
+.portfolio-items .imgWrapper img {
+    border: 10px solid #eaeaea;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
